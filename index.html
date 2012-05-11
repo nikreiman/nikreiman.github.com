@@ -28,7 +28,7 @@
 	
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.min.js"></script>
-	
+  <script language="javascript" src="js/email.js"></script>
   <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -81,7 +81,8 @@
 	            <div id="tab1" class="tab_content social">
                 <ul>
                   <li class="odd">
-                    <a href="mailto:nik.reiman@gmail.NOSPAM.com?subject=Hello there"><img src="http://static.nikreiman.com/icon_email.png"/>Email</a>
+                  <!--<img src='http://static.nikreiman.com/icon_email.png'/>-->
+                  <script>mail2("nik.reiman", "gmail", 0, "subject=Hello there", "<img src='http://static.nikreiman.com/icon_email.png'/> Email")</script>
                   </li>
                   <li class="even">
                     <a href="http://twitter.com/nikreiman"><img src="http://static.nikreiman.com/icon_twitter.png" alt="twitter"/> Twitter</a>
@@ -90,7 +91,7 @@
                     <a href="http://github.com/nikreiman"><img src="http://static.nikreiman.com/icon_github.png"/> GitHub</a>
                   </li>
                   <li class="even">
-                    <a href="http://mergeconflict.net"><img src="http://static.nikreiman.com/icon_blogger.png"/> Merge Conflict (blog)</a>
+                    <a href="http://mergeconflict.net"><img src="http://static.nikreiman.com/icon_blogger.png"/> Blogger</a>
                   </li>
                   <li class="odd">
                     <a href="http://nikreiman.tumblr.com"><img src="http://static.nikreiman.com/icon_tumblr.png"/> Tumblr</a>
